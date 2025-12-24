@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: hw3
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/pard6_seminar3_hw?serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password: 5991
+
+  web:
+    cors:
+      allowed-origins: http://localhost:3000
+
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    database: mysql
+    hibernate:
+      ddl-auto: update
+    generate-ddl: false
+    properties:
+      hibernate:
+        format_sql: true
+        enable_lazy_load_no_trans: true
